@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#0d6b42">
+    <title>Login | Online Passenger Van Reservation</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main class="page-shell">
+        <div class="ambient ambient-one"></div>
+        <div class="ambient ambient-two"></div>
+        <div class="grid-glow"></div>
+
+        <section class="login-layout">
+            <div class="brand-panel">
+                <div class="brand-mark" aria-hidden="true">
+                    <svg viewBox="0 0 64 64" role="img">
+                        <path d="M32 6 51 13v15c0 13.2-7.5 24.2-19 30C20.5 52.2 13 41.2 13 28V13l19-7Z"></path>
+                        <path d="M22 29h20M26 23h12M24 35h16M27 41h10" class="shield-lines"></path>
+                        <circle cx="23" cy="23" r="2.2"></circle>
+                        <circle cx="41" cy="23" r="2.2"></circle>
+                    </svg>
+                </div>
+
+                <div class="eyebrow">Passenger Van Reservation</div>
+                <h1>Travel smarter.<br><span>Reserve with confidence.</span></h1>
+                <p class="brand-copy">A simple platform for passenger van reservations, trip schedules, and driver allocation.</p>
+
+                <div class="feature-list">
+                    <div class="feature-item">
+                        <span class="feature-icon">
+                            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 6.5A2.5 2.5 0 0 1 6.5 4h11A2.5 2.5 0 0 1 20 6.5v7A2.5 2.5 0 0 1 17.5 16h-11A2.5 2.5 0 0 1 4 13.5z"></path><path d="M7 19h10M8 16v3M16 16v3"></path><circle cx="8" cy="13" r="1"></circle><circle cx="16" cy="13" r="1"></circle></svg>
+                        </span>
+                        <div>
+                            <strong>Simple reservation flow</strong>
+                            <span>Choose a trip and reserve available seats.</span>
+                        </div>
+                    </div>
+
+                    <div class="feature-item">
+                        <span class="feature-icon">
+                            <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="9" cy="8" r="3"></circle><circle cx="17" cy="9" r="2.3"></circle><path d="M3.5 19a5.5 5.5 0 0 1 11 0M14.5 19a4 4 0 0 1 6 0"></path></svg>
+                        </span>
+                        <div>
+                            <strong>Role-based access</strong>
+                            <span>Separate access for passengers, dispatchers, and admins.</span>
+                        </div>
+                    </div>
+
+                    <div class="feature-item">
+                        <span class="feature-icon">
+                            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3v18M5 8h14M5 16h14"></path><circle cx="12" cy="8" r="2"></circle><circle cx="8" cy="16" r="2"></circle></svg>
+                        </span>
+                        <div>
+                            <strong>Organized operations</strong>
+                            <span>Built around schedules, reservations, and driver records.</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="brand-footer">
+                    <span class="status-dot"></span>
+                    Designed for a responsive desktop and mobile experience
+                </div>
+            </div>
+
+            <section class="login-card" aria-labelledby="login-title">
+                <div class="card-topline"></div>
+
+                <div class="card-header">
+                    <div class="mini-brand">
+                        <div class="mini-logo">PVR</div>
+                        <div>
+                            <strong>Passenger Van System</strong>
+                            <span>Online Reservation Portal</span>
+                        </div>
+                    </div>
+                    <div class="secure-badge">
+                        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 10V8a5 5 0 0 1 10 0v2"></path><rect x="5" y="10" width="14" height="10" rx="2"></rect><circle cx="12" cy="15" r="1.4"></circle></svg>
+                        Secure access
+                    </div>
+                </div>
+
+                <div class="heading-block">
+                    <div class="section-kicker">WELCOME BACK</div>
+                    <h2 id="login-title">Sign in to your account</h2>
+                    <p>Enter your account details to continue.</p>
+                </div>
+
+                <form id="loginForm" novalidate>
+                    <div class="field-group">
+                        <label for="role">Account role</label>
+                        <div class="input-shell select-shell">
+                            <span class="input-icon">
+                                <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 6.5A2.5 2.5 0 0 1 6.5 4h11A2.5 2.5 0 0 1 20 6.5v11a2.5 2.5 0 0 1-2.5 2.5h-11A2.5 2.5 0 0 1 4 17.5z"></path><path d="M8 9h8M8 13h5"></path></svg>
+                            </span>
+                            <select id="role" name="role">
+                                <option value="passenger">Passenger</option>
+                                <option value="dispatcher">Dispatcher</option>
+                                <option value="admin">Administrator</option>
+                            </select>
+                            <span class="select-arrow">
+                                <svg viewBox="0 0 24 24" aria-hidden="true"><path d="m7 9 5 5 5-5"></path></svg>
+                            </span>
+                        </div>
+                    </div>
+
+                    <div class="field-group">
+                        <label for="identity">Email or username</label>
+                        <div class="input-shell">
+                            <span class="input-icon">
+                                <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="8" r="3"></circle><path d="M5 20a7 7 0 0 1 14 0"></path></svg>
+                            </span>
+                            <input id="identity" name="identity" type="text" autocomplete="username" placeholder="Enter your email or username">
+                        </div>
+                        <span class="field-error" id="identityError"></span>
+                    </div>
+
+                    <div class="field-group">
+                        <div class="label-row">
+                            <label for="password">Password</label>
+                            <button class="text-button" type="button" id="togglePassword">Show password</button>
+                        </div>
+                        <div class="input-shell">
+                            <span class="input-icon">
+                                <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="5" y="10" width="14" height="10" rx="2"></rect><path d="M8 10V8a4 4 0 0 1 8 0v2"></path></svg>
+                            </span>
+                            <input id="password" name="password" type="password" autocomplete="current-password" placeholder="Enter your password">
+                        </div>
+                        <span class="field-error" id="passwordError"></span>
+                    </div>
+
+                    <div class="form-options">
+                        <label class="check-row">
+                            <input type="checkbox" id="remember" name="remember">
+                            <span class="custom-check"></span>
+                            <span>Remember me</span>
+                        </label>
+                        <button type="button" class="text-button" id="forgotPassword">Forgot password?</button>
+                    </div>
+
+                    <div class="message-box" id="formMessage" role="status" aria-live="polite"></div>
+
+                    <button class="login-button" id="loginButton" type="submit">
+                        <span class="button-text">Sign in</span>
+                        <span class="button-spinner" aria-hidden="true"></span>
+                        <svg class="button-arrow" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h13M13 6l6 6-6 6"></path></svg>
+                    </button>
+                </form>
+
+                <div class="divider"><span>Need access?</span></div>
+
+                <button class="support-button" type="button" id="supportButton">
+                    <span>
+                        <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9"></circle><path d="M9.6 9a2.5 2.5 0 1 1 4.2 1.8c-.9.8-1.8 1.2-1.8 2.7"></path><circle cx="12" cy="17" r="1"></circle></svg>
+                    </span>
+                    Contact system support
+                </button>
+
+                <div class="card-footer">
+                    Online Passenger Van Reservation and Driver Allocation System
+                </div>
+            </section>
+        </section>
+    </main>
+
+    <div class="modal-backdrop" id="modalBackdrop" aria-hidden="true">
+        <div class="modal" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+            <button class="modal-close" type="button" id="modalClose" aria-label="Close dialog">×</button>
+            <div class="modal-icon">
+                <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3v18M3 12h18"></path></svg>
+            </div>
+            <div class="section-kicker">SYSTEM INFORMATION</div>
+            <h3 id="modalTitle">Support and access</h3>
+            <p id="modalText">For account access concerns, contact the system administrator or dispatcher assigned to your account.</p>
+            <button class="login-button compact" type="button" id="modalAction">Close</button>
+        </div>
+    </div>
+
+    <script src="login.js"></script>
+</body>
+</html>
